@@ -4,7 +4,7 @@
 
 
 .intro{
-    background-image: url(https://wallpaperaccess.com/full/1892327.jpg);
+    background-image: url(https://wallpaperaccess.com/full/4902543.jpg);
    width: 1500px;
    height: 1500px;
    text-align: center;
@@ -17,6 +17,10 @@ list-style-image: unset;
 
 }
 .h1{
-color: red;
+color: green;
 text-align: center;
+}
+
+.list{
+    color:purple
 }
