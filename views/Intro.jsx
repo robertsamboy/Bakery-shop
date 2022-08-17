@@ -11,7 +11,7 @@ const React = require('react');
             <body style = {design}>
             <div>
                 <h1>Welcome to the PokeLibrary!</h1>
-                <nav><h2><a href = {`/pokemon/`}>CLICK HERE TO BEGIN</a></h2></nav>
+                <nav><h2><a href = {`/bakery/`}>CLICK HERE TO BEGIN</a></h2></nav>
                 </div></body>
         )
  }
