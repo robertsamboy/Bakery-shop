@@ -51,6 +51,18 @@ app.get('/bakery/new', (req,res)=>{
     res.render('New')
 })
 
+
+app.post('/bakery/',(req,res)=>{
+    Bakery.create(req.body,(error, createdBakery)=>{
+        res.redirect('/bakery/')
+    })
+})
+app.get('/bakery/main/:id',(req,res)=>{
+    Bakery.findById(req.params.id, (err, foundBakery)=>{
+        res.render('Show', {bakery: foundBakery})
+    })
+})
+
 app.listen(port,() => {
     console.log('I am listening on port' , port);
 }); 

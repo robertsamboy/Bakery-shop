@@ -4,7 +4,7 @@ class Show extends React.Component {
     render(){
       
         
-        const cake = this.props.cake
+        const treats = this.props.treats
        function caps(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
        }

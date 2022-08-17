@@ -16,8 +16,8 @@ const React = require('react');
                         <li>
                             {caps(cake.name)}
 
-                            <nav> <form action = {`/bakery/x/${mon.id}?_method=DELETE`} method='POST'><button type='submit'>Remove item </button></form></nav>
-                                <a href = {`/bakery/x/${mon.id}/edit`}>Change order</a>
+                            <nav> <form action = {`/bakery/x/${cake.id}?_method=DELETE`} method='POST'><button type='submit'>Remove item </button></form></nav>
+                                <a href = {`/bakery/x/${cake.id}/edit`}>Change order</a>
                         </li>
                     )
 
