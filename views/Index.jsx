@@ -8,16 +8,22 @@ const React = require('react');
         return string.charAt(0).toUpperCase() + string.slice(1);
        }
        return(
+        <html>
+                <head>
+                    <link rel='stylesheet' href='/css/design.css'></link>
+                </head>
+        <body className='indexbackground'>
         <div>      
             <h1>Welcome to the Shop, We have a variety of selections for you to choose from </h1>  
             <ul>
                 {treats.map((cake) => {
                     return(
                         <li>
+                            <a href = {`/bakery/main/${cake.id}`}>
                             {caps(cake.name)}
-
-                            <nav> <form action = {`/bakery/x/${cake.id}?_method=DELETE`} method='POST'><button type='submit'>Remove item </button></form></nav>
-                                <a href = {`/bakery/x/${cake.id}/edit`}>Change order</a>
+                            </a>
+                            <nav> <form action = {`/bakery/main/${cake.id}?_method=DELETE`} method='POST'><button type='submit'>Remove item </button></form></nav>
+                                <a href = {`/bakery/main/${cake.id}/edit`}>Change order</a>
                         </li>
                     )
 
@@ -26,7 +32,8 @@ const React = require('react');
 
 
         </div>
-
+        </body>
+        </html>
        )
     }
  }

@@ -69,6 +69,11 @@ app.get('/bakery/main/:id',(req,res)=>{
     })
 })
 
+app.delete('/bakery/main/:id', (req,res)=>{
+    Bakery.findByIdAndRemove(req.params.id, (error,database)=>{
+        res.redirect('/bakery/')
+    })
+})
 app.listen(port,() => {
     console.log('I am listening on port' , port);
 }); 
