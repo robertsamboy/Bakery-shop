@@ -6,6 +6,7 @@ require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 3003;
 const methodOverride = require('method-override')
+const Sweetslist = require('./utilities/Sweetslist')
 
 
 //DB connection
@@ -30,6 +31,11 @@ console.log('I run for all routes')
 next()
 })
 app.use(methodOverride('_method'))
+
+// SEED ROUTE
+app.get('/bakery/sweets', (req,res)=>{
+    Bakery.create(Sweetslist)
+})
 
 //HOME PAGE
 app.get('/',(req,res)=>{
