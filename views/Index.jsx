@@ -9,7 +9,7 @@ const React = require('react');
        }
        return(
         <div>      
-            <h1> </h1>    
+            <h1>Welcome to the Shop, We have a variety of selections for you to choose from </h1>    
 
 
         </div>
@@ -17,3 +17,7 @@ const React = require('react');
        )
     }
  }
+
+
+
+ module.exports = Index
