@@ -15,6 +15,12 @@ mongoose.connection.once('open', ()=>{
 
 
 app.use(express.urlencoded({extended:false}))
+
+
+// FOR CSS USE
+app.use(express.static('public'));
+
+
 // setting up our views
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
