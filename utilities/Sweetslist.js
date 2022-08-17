@@ -16,3 +16,5 @@ const Sweetslist = [
     {type: "Cupcake", name: "Lemon Cupcake", img: "https://www.lifeloveandsugar.com/wp-content/uploads/2021/03/Lemon-Cupcakes4.jpg"},
 
 ]
+
+module.exports = Sweetslist
