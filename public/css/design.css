@@ -5,9 +5,10 @@
 
 .intro{
     background-image: url(https://wallpaperaccess.com/full/1892327.jpg);
-   width: fit-content;
-   height: fit-content;
+   width: 1500px;
+   height: 1500px;
    text-align: center;
+   list-style-type: armenian;
 
 }
 .h1{
