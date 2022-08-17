@@ -8,7 +8,12 @@
    width: 1500px;
    height: 1500px;
    text-align: center;
-   list-style-type: armenian;
+   list-style-image: url(https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com//content/9c/a6/3ccd3e9f4b25bbc7d41bfcbccb62/2020-cen-ecommerce-pfds-fruitcheesecakemini._TTW_._CR0,0,1000,1000_._SR580,580_._QL100_.jpg);
+   list-style-image: inherit;
+list-style-image: initial;
+list-style-image: revert;
+list-style-image: revert-layer;
+list-style-image: unset;
 
 }
 .h1{

@@ -47,6 +47,10 @@ Bakery.find({}, (error, allBakery)=>{
 })
 
 
+app.get('/bakery/new', (req,res)=>{
+    res.render('New')
+})
+
 app.listen(port,() => {
     console.log('I am listening on port' , port);
 }); 
