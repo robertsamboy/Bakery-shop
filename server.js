@@ -41,7 +41,7 @@ app.get('/',(req,res)=>{
 app.get('/bakery/', (req,res)=>{
 Bakery.find({}, (error, allBakery)=>{
     res.render('Index',{
-        bakery: allBakery
+        treats: allBakery
     })
 })
 })
@@ -59,7 +59,7 @@ app.post('/bakery/',(req,res)=>{
 })
 app.get('/bakery/main/:id',(req,res)=>{
     Bakery.findById(req.params.id, (err, foundBakery)=>{
-        res.render('Show', {bakery: foundBakery})
+        res.render('Show', {treats: foundBakery})
     })
 })
 
