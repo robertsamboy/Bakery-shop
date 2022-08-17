@@ -10,7 +10,7 @@ const React = require('react');
         return(
             <body style = {design}>
             <div>
-                <h1>Welcome to the PokeLibrary!</h1>
+                <h1>Welcome to the Bakery!</h1>
                 <nav><h2><a href = {`/bakery/`}>CLICK HERE TO BEGIN</a></h2></nav>
                 </div></body>
         )

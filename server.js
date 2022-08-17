@@ -1,6 +1,7 @@
 
 const express = require('express');
 const mongoose = require('mongoose')
+const Bakery = require('./models/bakery')
 require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 3003;
@@ -24,6 +25,20 @@ next()
 })
 app.use(methodOverride('_method'))
 
+//HOME PAGE
+app.get('/',(req,res)=>{
+    res.render('Intro')
+})
+
+//INDEX PAGE
+
+app.get('/bakery/', (req,res)=>{
+Bakery.find({}, (error, allBakery)=>{
+    res.render('Index',{
+        bakery: allBakery
+    })
+})
+})
 
 
 app.listen(port,() => {
