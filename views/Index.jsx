@@ -19,8 +19,9 @@ const React = require('react');
                 {treats.map((cake) => {
                     return(
                         <li>
-                            <a href = {`/bakery/main/${cake.id}`}>
                             {caps(cake.name)}
+                            <a href = {`/bakery/main/${cake.id}`}>
+                            {(`${cake.img}`)}
                             </a>
                             <nav> <form action = {`/bakery/main/${cake.id}?_method=DELETE`} method='POST'><button type='submit'>Remove item </button></form></nav>
                                 <a href = {`/bakery/main/${cake.id}/edit`}>Change order</a>
